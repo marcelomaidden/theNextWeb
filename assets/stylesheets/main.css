@@ -1,20 +1,27 @@
 * {
     margin: 0;
     padding: 0;
+
 }
+
 .nav1 {
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 30px;
     background-color: black;
-   align-items: center;
-   position: relative;
+    align-items: center;
+    position: relative;
+    font-weight: 100;
+    font-size: 14px;
 }
+
 .hidden {
     display: none;
 }
+
 .float-left {
     float: left;
 }
+
 .float-right {
     float:right;
 }
@@ -22,6 +29,7 @@
 ul li {
   list-style: none;
   margin-right: 5px;
+  text-transform: capitalize;
 }
 ul li a {
     text-decoration: none;
@@ -30,9 +38,40 @@ ul li a {
 .color-white {
     color: white;
 }
-.a-hover-1:hover + .hidden-events{
+
+.hidden-events,
+.hidden-business {
+    position: absolute;
+    background-color:black;
+    top: 25px;
+    width: 200px;
+}
+
+.hidden-events div,
+.hidden-business div {
+    border-bottom: 1px solid white;
+    padding: 10px 10px;
+}
+
+.hidden-events {
+    left: 50px;
+}
+
+.hidden-business {
+    left: 100px;
+}
+
+.hidden-events:hover,
+.hidden-business:hover {
     display: block;
-    color: red;
+}
+
+.hover-events:hover + .hidden-events{
+    display: block;
+}
+
+.hover-business:hover + .hidden-business{
+    display: block;
 }
 
 .margin-l {
