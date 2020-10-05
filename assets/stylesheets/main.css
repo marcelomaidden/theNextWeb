@@ -135,38 +135,47 @@ padding-left: 10px;
     background-color: red;
 }
 
+.header-section {
+    grid-template-columns: 65% 35%;
+    gap: 10px;
+    grid-template-rows: 500px;
+    background: linear-gradient(to bottom, lightgray, white);
+}
+
 .header-article {
     background-image: linear-gradient(to bottom, rgba(255,69,0, 0.7), rgba(0,0,0,1)), 
     url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/stonkark-796x448.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding-top: 15px;
     grid-template-rows: 45% 55%;
-}
-
-.header-section {
-    grid-template-columns: 65% 35%;
-    grid-gap: 10px;
-    grid-template-rows: 500px;
+    margin-left: 10px;
+    height: 485px;
+    position: relative;
 }
 
 .header-main-article {
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 290px;
     align-items: start;
 }
 
 .header-main-article img {
     width: 500px;
+    height: 100%;
     padding-left: 15px;
     filter: brightness(0) invert(1);
 }
 
 .main-article-info {
-    height: 110px;
-    width: 700px;
     padding-left: 15px;
-    margin-top: -10px;
+    margin-right: 10px;
+    position: absolute;
+    bottom: 2px;
+}
+
+.header-article, 
+.header-aside {
+    margin-top: 10px;
 }
 
 .main-article-info * {
@@ -177,6 +186,15 @@ padding-left: 10px;
     font-size: 60px;
 }
 
+.header-article-author a{
+    color: lightgray;
+    font-size: 12px;
+}
+
+.header-article-author a:hover {
+    color: white;
+    font-size: 12px;
+}
 .header-article-author {
     grid-template-columns: 20% 20% 60%;
     color: lightslategray;
@@ -185,7 +203,8 @@ padding-left: 10px;
 
 .header-aside {
     grid-template-rows: 50% 50%;
-    grid-gap: 2px;
+    gap: 10px;
+    max-height: 550px;
 }
 
 .aside-main-1,
@@ -195,6 +214,7 @@ padding-left: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    height: 100%;
 }
 
 .aside-main-1 a,
