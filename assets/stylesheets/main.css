@@ -2,3 +2,48 @@
     margin: 0;
     padding: 0;
 }
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-color: red;
+}
+
+.header-section {
+    background-color: blue;
+}
+
+.latest-news {
+    background-color: purple;
+}
+
+.most-popular {
+    background-color: grey;
+}
+
+.latest-deals {
+    background-color: seagreen;
+}
+
+.footer {
+    background-color: lightslategray;
+}
+
+.copyright {
+    background-color: black;
+}
