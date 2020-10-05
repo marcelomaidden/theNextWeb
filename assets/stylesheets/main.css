@@ -2,7 +2,48 @@
     margin: 0;
     padding: 0;
 }
+.nav1 {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 30px;
+    background-color: black;
+   align-items: center;
+   position: relative;
+}
+.hidden {
+    display: none;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float:right;
+}
 
+ul li {
+  list-style: none;
+  margin-right: 5px;
+}
+ul li a {
+    text-decoration: none;
+   
+}
+.color-white {
+    color: white;
+}
+.a-hover-1:hover + .hidden-events{
+    display: block;
+    color: red;
+}
+
+.margin-l {
+    margin-left: 10px;
+}
+.margin-r {
+    margin-right: 10px;
+}
+.nav-top-right {
+    margin-right: 5px;
+}
 .flex {
     display: flex;
 }
