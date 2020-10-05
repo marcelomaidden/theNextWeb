@@ -65,8 +65,9 @@ ul li a {
 .hidden-business {
     position: absolute;
     background-color:black;
-    top: 25px;
+    top: 20px;
     width: 200px;
+    z-index: 4;
 }
 
 .hidden-events div,
@@ -205,6 +206,7 @@ padding-left: 10px;
     grid-template-rows: 50% 50%;
     gap: 10px;
     max-height: 550px;
+    width: 420px;
 }
 
 .aside-main-1,
