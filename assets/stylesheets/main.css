@@ -31,6 +31,9 @@ ul li {
   margin-right: 5px;
   text-transform: capitalize;
 }
+a {
+    text-decoration: none;
+}
 ul li a {
     text-decoration: none;
    
@@ -82,6 +85,30 @@ ul li a {
 }
 .nav-top-right {
     margin-right: 5px;
+}
+.nav-2 {
+    grid-template-columns: 96% 4%;
+    grid-template-rows: 45px;
+    background-color: white;
+}
+.nav-2-left {
+justify-items: start;
+align-items: center;
+padding-left: 10px;
+}
+.color-grey {
+    color: grey;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.color-grey:hover {
+    color: black;
+}
+.nav-2-right {
+ padding-top: 13px;
+ padding-left: 13px;
+    border-left: 1px solid gray;
+    color: grey;
 }
 .flex {
     display: flex;
