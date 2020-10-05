@@ -3,15 +3,23 @@
     padding: 0;
 
 }
+/*general rules */
 
-.nav1 {
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 30px;
-    background-color: black;
-    align-items: center;
-    position: relative;
-    font-weight: 100;
-    font-size: 14px;
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.margin-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hidden {
@@ -24,6 +32,17 @@
 
 .float-right {
     float:right;
+}
+
+/*header rules */
+.nav1 {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 30px;
+    background-color: black;
+    align-items: center;
+    position: relative;
+    font-weight: 100;
+    font-size: 14px;
 }
 
 ul li {
@@ -101,6 +120,7 @@ padding-left: 10px;
     padding-right: 10px;
     text-transform: uppercase;
 }
+
 .color-grey:hover {
     color: black;
 }
@@ -110,29 +130,80 @@ padding-left: 10px;
     border-left: 1px solid gray;
     color: grey;
 }
-.flex {
-    display: flex;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.grid {
-    display: grid;
-}
-
-.margin-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .header {
     background-color: red;
 }
 
+.header-article {
+    background-image: linear-gradient(to bottom, rgba(255,69,0, 0.7), rgba(0,0,0,1)), 
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/stonkark-796x448.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 15px;
+    grid-template-rows: 45% 55%;
+}
+
 .header-section {
-    background-color: blue;
+    grid-template-columns: 65% 35%;
+    grid-gap: 10px;
+    grid-template-rows: 500px;
+}
+
+.header-main-article {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 290px;
+    align-items: start;
+}
+
+.header-main-article img {
+    width: 500px;
+    padding-left: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.main-article-info {
+    height: 110px;
+    width: 700px;
+    padding-left: 15px;
+    margin-top: -10px;
+}
+
+.main-article-info * {
+    padding-bottom: 10px;
+}
+
+.main-article-info h1 {
+    font-size: 60px;
+}
+
+.header-article-author {
+    grid-template-columns: 20% 20% 60%;
+    color: lightslategray;
+
+}
+
+.header-aside {
+    grid-template-rows: 50% 50%;
+    grid-gap: 2px;
+}
+
+.aside-main-1,
+.aside-main-2 {
+    background-image: linear-gradient(to bottom, rgba(166, 156, 224, 0.2), rgba(0,0,0,1)), 
+    url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.aside-main-1 a,
+.aside-main-2 a {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    bottom: 10px;
+    left: 10px;
 }
 
 .latest-news {
