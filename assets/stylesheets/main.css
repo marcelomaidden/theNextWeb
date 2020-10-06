@@ -155,10 +155,11 @@ width: 120px;
 }
 
 .header-section {
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 2fr 1fr;
     gap: 10px;
     grid-template-rows: 500px;
     background: linear-gradient(to bottom, lightgray, white);
+    width: 100%;
 }
 
 .header-article {
@@ -630,6 +631,7 @@ figcaption a {
     .header-section {
       grid-template-columns: 2fr 1fr;
       grid-template-rows: 350px;
+      width: 99.5%;
     }
    
     .aside-main-1,
