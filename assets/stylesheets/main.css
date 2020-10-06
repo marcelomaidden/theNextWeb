@@ -154,10 +154,6 @@ width: 120px;
     
 }
 
-.header {
-    background-color: red;
-}
-
 .header-section {
     grid-template-columns: 65% 35%;
     gap: 10px;
@@ -541,11 +537,13 @@ figcaption a {
 .copyright img {
     width: 60px;
 }
+
 @media  (max-width:768px) {
     .nav1,.nav-2-left {
         display:none;
         background-color: white;
     }
+
     .nav-2-right  .menu-bar,
     .nav-2-right .search-bar {
         display: block;
@@ -576,5 +574,69 @@ figcaption a {
         left: 0;
          width: 100px;
         height: 43px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .nav1,.nav-2-left {
+        display:flex;
+        padding-left: 100px;
+        font-size: 14px;
+    }
+
+    .nav1 {
+        height: 35px;
+        column-gap: 20px;
+    }
+
+    .nav-hidden-items {
+        display: none;
+    }
+
+    .nav-2 {
+        max-width: 95%;
+        padding-left: 15px;
+    }
+
+    .nav-2-right  .menu-bar {
+        display: none; 
+    }
+
+    .hidden-events,
+    .hidden-business {
+        top: 25px;
+    }
+
+    .hidden-events {
+        left: 150px;
+    }
+    
+    .hidden-business {
+        left: 200px;
+    }   
+
+    .search-bar {
+        padding-top: 12px;
+    }
+   
+    .nav-2-right {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 0;
+        width: 100%;
+       
+    }
+    .header {
+        position: relative;
+    }
+
+   .query-logo img {
+        display: block;
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+         width: 100px;
+        height: 82px;
     }
 }
