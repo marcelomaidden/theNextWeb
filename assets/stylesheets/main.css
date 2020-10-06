@@ -281,6 +281,20 @@ color: black;
 .latest-deals img {
     height: 180px;
 }
+.latest-deals-img {
+    padding-bottom: 30px;
+}
+.latest-deals h5 {
+    font-size: 18px;
+}
+
+.latest-deals span.discount{
+    text-decoration: line-through;
+    color: lightslategray;
+}
+.latest-deals .price {
+    font-size: 20px;
+}
 /*latest-funding*/
 
 .latest-funding li a {
