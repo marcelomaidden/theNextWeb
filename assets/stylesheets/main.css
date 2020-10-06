@@ -617,8 +617,6 @@ figcaption a {
 
     .header-article {        
         height: 98.5%;
-        background-image: linear-gradient(to bottom, rgba(75, 73, 73, 0.7), rgba(0,0,0,1)), 
-    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/stonkark-796x448.jpg");
     }
 
     .header-article h1 {
@@ -700,6 +698,11 @@ figcaption a {
 {
     .header-hidden {
         display: none;
+    }
+
+    .header-article {
+        background-image: linear-gradient(to bottom, rgba(75, 73, 73, 0.7), rgba(0,0,0,1)), 
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/stonkark-796x448.jpg");
     }
 
     .header-article-author {
