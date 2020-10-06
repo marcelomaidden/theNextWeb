@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 /*general rules */
 
@@ -220,6 +219,7 @@ padding-left: 10px;
     grid-template-rows: 50% 50%;
     gap: 10px;
     max-height: 550px;
+    width: 420px;
 }
 
 .aside-main-1,
