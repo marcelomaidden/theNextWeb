@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 2px solid red;
 }
 /*general rules */
 
@@ -609,21 +608,36 @@ figcaption a {
         padding-left: 100px;
         font-size: 14px;
     }
-    .header-article {
-        width: 490px;
-        height: 300px;
-    }
-    .header-section {
-      grid-template-rows: 300px;
-    }
-    .header-aside {
-        width: 250px;
-        grid-template-rows: 50% 50%;
-    }
+
+    .header-aside,
     .aside-main-1,
     .aside-main-2 {
-        width: 250px;
-        height: 50%;
+        height: 100%;
+    }
+
+    .header-article {        
+        height: 98.5%;
+        background-image: linear-gradient(to bottom, rgba(75, 73, 73, 0.7), rgba(0,0,0,1)), 
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/stonkark-796x448.jpg");
+    }
+
+    .header-article h1 {
+        font-size: 35px;
+    }
+
+    .header-aside a {
+        font-size: 20px;
+    }
+
+    .header-section {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 350px;
+    }
+   
+    .aside-main-1,
+    .aside-main-2,
+    .header-aside {
+        width: 100%;
     }
 
     .nav1 {
@@ -686,5 +700,9 @@ figcaption a {
 {
     .header-hidden {
         display: none;
+    }
+
+    .header-article-author {
+        grid-template-columns: 30% 30% 40%;
     }
 }
