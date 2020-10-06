@@ -256,15 +256,31 @@ font-size: 30px;
 } 
 .latest-news h1 a,
 .latest-funding h1 a,
-.latest-funding li a {
+.latest-funding li a ,
+.latest-deals-header a{
     color: #f42;
+
 }
 .latest-news h1 a:hover,
 .latest-funding h1 a:hover,
-.latest-funding li a:hover {
+.latest-funding li a:hover,
+.latest-deals-header a:hover {
 color: black;
 }
-
+.latest-deals-header {
+    grid-column: span 4;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.latest-deals-header h4 a {
+    text-decoration: none ;
+    font-size: 20px;
+    font-weight: 100;
+}
+.latest-deals img {
+    height: 180px;
+}
 /*latest-funding*/
 
 .latest-funding li a {
@@ -295,7 +311,8 @@ color: black;
 }
 
 .internet {
-    border-bottom: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
+    border-bottom: 1px solid rgb(226, 180, 171);
 }
 
 .ad {
@@ -436,10 +453,6 @@ figcaption h5 {
 
 figcaption a {
     color: black;
-}
-
-.latest-deals {
-    background-color: seagreen;
 }
 
 .footer {
