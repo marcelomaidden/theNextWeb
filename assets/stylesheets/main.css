@@ -469,10 +469,65 @@ figcaption a {
     color: black;
 }
 
-.footer {
-    background-color: lightslategray;
+
+.footer-links{
+    background-color: #131313;
+    height: 150px;
+    justify-content: center;
+}
+
+.footer-links div {
+    width: 35%;
+    padding: 30px 0;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-menu {
+    justify-content: space-between;
+}
+.footer-menu a,
+.copyright {
+    color: #aaa;
+}
+.footer-menu a,
+.copyright {
+    font-size: 14px;
+}
+
+.footer-menu a:hover {
+    color: white;
+}
+
+.social-media li a {
+    background-color: rgb(58, 60, 61);
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.social-media li a:hover {
+    background-color: lightslategrey;
+}
+
+.social-media {
+    padding-bottom: 30px;
+    justify-content: space-between;
 }
 
 .copyright {
     background-color: black;
+    height: 75px;
+    justify-content: space-around;
+}
+
+.copyright div {
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright img {
+    width: 60px;
 }
