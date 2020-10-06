@@ -30,6 +30,10 @@
     float: left;
 }
 
+ul {
+    list-style: none;
+}
+
 .float-right {
     float:right;
 }
@@ -50,9 +54,11 @@
   margin-right: 5px;
   text-transform: capitalize;
 }
+
 a {
     text-decoration: none;
 }
+
 ul li a {
     text-decoration: none;
    
@@ -65,7 +71,7 @@ ul li a {
 .hidden-business {
     position: absolute;
     background-color:black;
-    top: 25px;
+    top: 20px;
     width: 200px;
 }
 
@@ -90,6 +96,7 @@ ul li a {
 
 .hover-events:hover + .hidden-events{
     display: block;
+    z-index: 5;
 }
 
 .hover-business:hover + .hidden-business{
@@ -102,9 +109,13 @@ ul li a {
 .margin-r {
     margin-right: 10px;
 }
-.nav-top-right {
-    margin-right: 5px;
+
+.nav-top-right li,
+.nav-top-left li {
+    padding-right: 10px;
+    text-transform: capitalize;
 }
+
 .nav-2 {
     grid-template-columns: 96% 4%;
     grid-template-rows: 45px;
@@ -215,6 +226,7 @@ padding-left: 10px;
     background-repeat: no-repeat;
     position: relative;
     height: 100%;
+    width: 420px;
 }
 
 .aside-main-1 a,
@@ -239,12 +251,18 @@ grid-column: span 4;
 font-size: 30px;
 } 
 .latest-news h1 a,
-.latest-funding h1 a {
+.latest-funding h1 a,
+.latest-funding li a {
     color: #f42;
 }
 .latest-news h1 a:hover,
-.lates-funding h1 a:hover {
+.latest-funding h1 a:hover,
+.latest-funding li a:hover {
 color: black;
+}
+
+.latest-funding li a {
+    padding-right: 15px;
 }
 
 .latest-funding {
@@ -253,7 +271,7 @@ color: black;
 }
 
 .latest-funding-header {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 350px;
 }
 
 .latest-funding article {
@@ -408,11 +426,4 @@ figcaption a {
 
 .copyright {
     background-color: black;
-}
-@media screen (max-width:480px){
-    .nav-top-right,
-    .nav-top-left
-    {
-        grid-template-columns: 1fr;
-    }
 }
