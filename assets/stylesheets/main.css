@@ -76,6 +76,7 @@ ul li a {
     background-color:black;
     top: 20px;
     width: 200px;
+    z-index: 100;
 }
 
 .hidden-events div,
@@ -99,7 +100,6 @@ ul li a {
 
 .hover-events:hover + .hidden-events{
     display: block;
-    z-index: 5;
 }
 
 .hover-business:hover + .hidden-business{
