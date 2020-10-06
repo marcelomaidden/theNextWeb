@@ -144,6 +144,15 @@ padding-left: 10px;
     border-left: 1px solid gray;
     color: grey;
 }
+.nav-2-right > .menu-bar {
+    display: none;
+}
+.query-logo img{
+display: none;
+height: 70px;
+width: 120px;
+    
+}
 
 .header {
     background-color: red;
@@ -316,7 +325,8 @@ color: black;
     padding-top: 30px;
 }
 
-.internet, .voip {
+.internet, 
+.voip {
     text-align: left;
     padding: 20px 10px;
     line-height: 1.5;
@@ -530,4 +540,41 @@ figcaption a {
 
 .copyright img {
     width: 60px;
+}
+@media  (max-width:768px) {
+    .nav1,.nav-2-left {
+        display:none;
+        background-color: white;
+    }
+    .nav-2-right  .menu-bar,
+    .nav-2-right .search-bar {
+        display: block;
+        padding: 10px 20px;
+        border-left: 1px solid gray;
+      
+    }
+    .menu-bar {
+          color: red;
+        font-size: 20px; 
+    }
+   
+    .nav-2-right {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 0;
+      width: 100%;
+       
+    }
+    .header {
+        position: relative;
+    }
+   .query-logo img {
+        display: block;
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+         width: 100px;
+        height: 43px;
+    }
 }
