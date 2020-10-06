@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 2px solid red;
 }
 /*general rules */
 
@@ -575,6 +576,31 @@ figcaption a {
          width: 100px;
         height: 43px;
     }
+    .header-article {
+        height: 180px;
+    }
+    .header-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    } 
+    .header-aside {
+         grid-template-columns: 1fr; 
+        grid-template-rows: 180px 180px;
+        margin-top: -3px;
+        margin-left: 9.5px;
+      
+    }
+    .aside-main-1,
+    .aside-main-2,
+    .header-aside {
+        width: 99.2%;
+    }
+    .main-article-info h1,
+    .aside-main-1 a,
+    .aside-main-2 a {
+        font-size: 25px;
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -582,6 +608,22 @@ figcaption a {
         display:flex;
         padding-left: 100px;
         font-size: 14px;
+    }
+    .header-article {
+        width: 490px;
+        height: 300px;
+    }
+    .header-section {
+      grid-template-rows: 300px;
+    }
+    .header-aside {
+        width: 250px;
+        grid-template-rows: 50% 50%;
+    }
+    .aside-main-1,
+    .aside-main-2 {
+        width: 250px;
+        height: 50%;
     }
 
     .nav1 {
@@ -638,5 +680,11 @@ figcaption a {
         left: 0;
          width: 100px;
         height: 82px;
+    }
+}
+@media (max-width:1023px)
+{
+    .header-hidden {
+        display: none;
     }
 }
