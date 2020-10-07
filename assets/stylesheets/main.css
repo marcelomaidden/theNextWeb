@@ -538,9 +538,9 @@ figcaption a {
 }
 
 .copyright div {
-    width: 50%;
     justify-content: space-between;
     align-items: center;
+    width: 550px; 
 }
 
 .copyright img {
@@ -658,6 +658,38 @@ figcaption a {
     .latest-funding article {
         grid-template-columns: 1fr;
     }
+    .footer-links {
+        z-index: -1000;
+    }
+    .social-media,
+    .footer-menu {
+        justify-content: space-evenly;
+    }
+     .copyright {
+        display: inline-flex;
+        width: 100%;
+       
+    }
+     .copyright div {
+        position: relative;
+       width: 250px;
+    } 
+   
+    .copyright div :nth-child(1) {
+       position: absolute;
+       left: -55px;
+       top: 10px;
+       height: 30px;
+    }  
+    .copyright div :nth-child(2) {
+        position: absolute;
+    }
+
+    .copyright div :nth-child(3) {
+        position: absolute;
+       left: 185px;
+        top: 43px;
+     }  
 
 }
 
@@ -784,7 +816,8 @@ figcaption a {
     }
     .hidden-media-Q {
         display: none;
-    }      
+    } 
+   
 }
 
 @media (max-width:1023px)
