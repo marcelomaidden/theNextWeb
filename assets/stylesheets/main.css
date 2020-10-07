@@ -189,10 +189,14 @@ width: 120px;
 }
 
 .header-main-article img {
-    width: 500px;
+    width: 70%;
     height: 100%;
     padding-left: 15px;
     filter: brightness(0) invert(1);
+}
+
+.header-main-article :nth-child(2) {
+    width: 200px;
 }
 
 .main-article-info {
@@ -572,11 +576,10 @@ figcaption a {
     .nav-2-right .search-bar {
         display: block;
         padding: 10px 20px;
-        border-left: 1px solid gray;
-      
+        border-left: 1px solid lightgray;
     }
     .menu-bar {
-          color: red;
+        color: red;
         font-size: 20px; 
     }
    
@@ -584,9 +587,9 @@ figcaption a {
         display: flex;
         justify-content: flex-end;
         padding-top: 0;
-      width: 100%;
-       
+        width: 100%;       
     }
+
     .header {
         position: relative;
     }
@@ -594,10 +597,12 @@ figcaption a {
     .header-article {
         height: 180px;
     }
+
     .header-section {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
     } 
+
     .header-aside {
          grid-template-columns: 1fr; 
         grid-template-rows: 180px 180px;
