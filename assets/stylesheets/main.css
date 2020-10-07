@@ -250,8 +250,8 @@ width: 120px;
 
 .latest-news {
     grid-template-columns: repeat(4,1fr);
-    gap: 15px;
-    max-width: 90%;
+     gap: 15px; 
+    max-width: 90%; 
     margin-top: 45px ;
     margin-bottom: 25px;
 }
@@ -600,7 +600,27 @@ figcaption a {
     .aside-main-2 a {
         font-size: 25px;
     }
-
+    .latest-news {
+        grid-template-columns: 1fr;
+    }
+    .latest-news h1{
+        grid-column: auto;
+    }
+    .latest-news-img img {
+        float: left;
+        width: 80px;
+        height: 90px;
+    }
+    .latest-news-img {
+        width: 100%;
+    }
+    .latest-news-img figcaption {
+       padding-left: 100px;
+    }
+    .latest-news-img figcaption h5 {
+     max-width: 100%;
+     padding-bottom: 10px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -695,6 +715,24 @@ figcaption a {
          width: 100px;
         height: 82px;
     }
+    .latest-news {
+        grid-template-columns: repeat(3,1fr);
+       max-width: 95%;
+       
+    }
+    .latest-news h1{
+        grid-column: span 3;
+    }
+    .latest-news-img {
+        row-gap: 8px;
+    }
+        .latest-news img {
+       width: 100%;   
+        }
+        .latest-news figcaption {
+            max-width: 250px;
+        }
+      
 }
 @media (max-width:1023px)
 {
