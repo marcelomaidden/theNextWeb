@@ -611,6 +611,7 @@ figcaption a {
     }
 
     .latest-news h1,
+    .latest-funding-header,
     .latest-deals-header {
         grid-column: auto;
     }
@@ -637,6 +638,17 @@ figcaption a {
      max-width: 100%;
      padding-bottom: 10px;
     }
+   
+    .latest-funding-header {
+        grid-template-columns: 1fr;
+    }
+    .latest-funding-header ul {
+        flex-direction: column;
+    }
+    .latest-funding article {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -748,6 +760,15 @@ figcaption a {
 
     .query-logo img {
         height: 82px;
+    }
+    .latest-funding-header {
+        grid-template-columns: 1fr;
+    }
+    .latest-funding article {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .hidden-media-Q {
+        display: none;
     }
       
 }
