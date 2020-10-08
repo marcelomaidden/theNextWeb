@@ -9,6 +9,9 @@
 
 - HTML & CSS
 
+## Getting started
+    In order to run the project locally clone the repository and open the index.html file in your preferred browser.
+
 ## Live Demo
 
 [Live Demo Link](https://marcelomaidden.github.io/theNextWeb/)
