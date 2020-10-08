@@ -288,9 +288,9 @@ ul li a {
 
 .text-on-img3,
 .text-on-img3 a {
-  font-size: 15px;
+  font-size: 12px;
   text-transform: capitalize;
-  color: gray;
+  color: hsla(0,0%,100%,.6);
 }
 
 .footer-menu a,
@@ -495,7 +495,6 @@ ul li a {
   justify-content: space-between;
   margin-bottom: 50px;
   flex-wrap: wrap;
-  /* gap: 10px; */
 }
 
 .relative {
@@ -510,7 +509,14 @@ ul li a {
 }
 
 .text-on-img2 {
-  font-size: 20px;
+  font-size: 120%;
+  font-weight: 900;
+}
+
+.text-on-img1 {
+  font-size: 75%;
+  font-weight: 100;
+  line-height: 2;
 }
 
 .text-on-img2:hover {
