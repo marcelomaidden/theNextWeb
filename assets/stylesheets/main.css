@@ -408,7 +408,7 @@ ul li a {
   left: 25px;
 }
 
-.ad div.title {
+.ad .title {
   background-color: orangered;
   text-align: center;
   height: 40px;
@@ -416,11 +416,13 @@ ul li a {
   color: white;
   font-weight: 700;
   font-size: 20px;
+  padding-left: 70px;
 }
 
 .ad div.info {
   height: 80px;
   background-color: rgba(255, 68, 34, 0.08);
+  padding-left: 70px;
 }
 
 /* most-popular section */
@@ -462,7 +464,7 @@ ul li a {
 }
 
 .header-padding {
-  padding: 10px 10px;
+  padding: 10px 20px;
 }
 
 .popular-img-png {
@@ -474,6 +476,11 @@ ul li a {
   display: inline-flex;
   max-width: 370px;
   gap: 50px;
+}
+
+.inline-flex figcaption {
+padding-left: 10px;
+padding-top: 5px;
 }
 
 .color-light-red {
