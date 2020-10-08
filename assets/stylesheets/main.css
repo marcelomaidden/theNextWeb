@@ -4,6 +4,10 @@
 }
 
 /* general rules */
+body {
+  font-family: 'ARS Maquette','Helvetica Neue',Arial,sans-serif;
+}
+
 figure img {
   width: 100%;
   height: 130px;
@@ -66,6 +70,15 @@ nav {
   position: relative;
   font-weight: 100;
   font-size: 14px;
+}
+
+.nav1 a {
+  color: hsla(0,0%,100%,.6);
+  font-size: 13px;
+}
+
+.nav1 a:hover {
+  color: white;
 }
 
 .no-style-list {
@@ -145,9 +158,10 @@ ul li a {
 }
 
 .color-grey {
-  color: grey;
+  color: rgb(161, 160, 160);
   padding-right: 10px;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .color-grey:hover {
@@ -158,7 +172,6 @@ ul li a {
   padding-top: 13px;
   padding-left: 13px;
   border-left: 1px solid gray;
-  color: grey;
 }
 
 .nav-2-right > .menu-bar {
@@ -175,7 +188,7 @@ ul li a {
 .header-section {
   grid-template-columns: 2fr 1fr;
   gap: 10px;
-  grid-template-rows: 500px;
+  grid-template-rows: 470px;
   background: linear-gradient(to bottom, lightgray, white);
   width: 100%;
   padding-top: 80px;
@@ -190,8 +203,8 @@ ul li a {
   padding-top: 15px;
   grid-template-rows: 45% 55%;
   margin-left: 10px;
-  height: 485px;
   position: relative;
+  height: 475px;
 }
 
 .header-main-article {
@@ -217,6 +230,11 @@ ul li a {
   bottom: 2px;
 }
 
+.header-article-author,
+.header-article-author a {
+  font-size: 10px;
+}
+
 .header-article,
 .header-aside {
   margin-top: 10px;
@@ -230,18 +248,25 @@ ul li a {
   font-size: 60px;
 }
 
-.aside-main-1 a,
-.aside-main-2 a {
-  position: absolute;
+.aside-main-1 a, 
+.aside-main-2 > a {
   font-size: 30px;
   font-weight: 900;
+}
+
+.aside-main-2 {
+  justify-content: flex-end;
+  padding: 10px 10px;
+}
+
+.aside-main-1 a {
+  position: absolute;
   bottom: 10px;
   left: 10px;
 }
 
 .header-article-author a {
   color: lightgray;
-  font-size: 12px;
 }
 
 .text-on-img3,
@@ -286,12 +311,15 @@ ul li a {
 
 .header-article-author a:hover {
   color: white;
-  font-size: 12px;
+  font-size: 10px;
 }
 
-.header-article-author {
-  grid-template-columns: 20% 20% 60%;
+.header-article-author { 
   color: lightslategray;
+}
+
+.header-article-author * {
+  padding-right: 5px;
 }
 
 .header-aside {
@@ -650,8 +678,7 @@ padding-top: 5px;
   }
 
   .main-article-info h1,
-  .aside-main-1 a,
-  .aside-main-2 a {
+  .aside-main-1 a {
     font-size: 25px;
   }
 
@@ -753,7 +780,7 @@ padding-top: 5px;
   }
 
   .header-article {
-    height: 98.5%;
+    height: 365px;
   }
 
   .header-article h1 {
