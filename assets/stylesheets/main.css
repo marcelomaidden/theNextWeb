@@ -21,6 +21,18 @@ figcaption a {
   color: black;
 }
 
+.latest-funding-header li {
+  border-right: 1px solid #f42;
+  margin-right: 10px;
+}
+
+.latest-news figcaption h6,
+.latest-news figcaption h6 a {
+  color: #aaa;
+  font-size: 88%;
+  font-weight: 100;
+}
+
 .flex {
   display: flex;
 }
@@ -292,6 +304,8 @@ ul li a {
 .latest-funding h1 a,
 .latest-funding li a {
   color: #f42;
+  font-size: 100%;
+  font-weight: 900;
 }
 
 .latest-funding li a {
@@ -386,9 +400,9 @@ ul li a {
 }
 
 .latest-news figcaption h5 {
-max-width: 100%;
-font-size: 14px;
-padding-bottom: 5px;
+  max-width: 100%;
+  font-size: 100%;
+  padding-bottom: 5px;
 }
 
 .latest-deals span.discount {
@@ -407,7 +421,7 @@ padding-bottom: 5px;
 }
 
 .latest-funding-header {
-  grid-template-columns: 3fr 350px;
+  grid-template-columns: 3fr 450px;
 }
 
 .latest-funding article {
@@ -422,7 +436,7 @@ padding-bottom: 5px;
   padding: 20px 10px;
   line-height: 1.5;
   background-color: #fffaf8;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .internet {
@@ -453,10 +467,26 @@ padding-bottom: 5px;
   padding-left: 70px;
 }
 
-.ad div.info {
+.ad .info {
   height: 80px;
   background-color: rgba(255, 68, 34, 0.08);
   padding-left: 70px;
+}
+
+.ad .info :nth-child(1) {
+  font-weight: 900;
+  padding-bottom: 4px;
+  padding-top: 10px;
+}
+
+.ad .info :nth-child(2) {
+  font-size: 10px;
+  color: #aaa;
+}
+
+.ad .title a {
+  color: white;
+  font-size: 80%;
 }
 
 /* most-popular section */
@@ -609,6 +639,10 @@ width: 100%;
 @media (max-width: 767px) {
   .most-popular {
     flex-direction: column;
+  }
+
+  .latest-funding-header li {
+    border: none;
   }
 
   .flex-1 {
