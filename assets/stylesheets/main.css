@@ -204,7 +204,7 @@ ul li a {
   grid-template-rows: 45% 55%;
   margin-left: 10px;
   position: relative;
-  height: 475px;
+  height: 458px;
 }
 
 .header-main-article {
@@ -256,7 +256,12 @@ ul li a {
 
 .aside-main-2 {
   justify-content: flex-end;
-  padding: 10px 10px;
+}
+
+.aside-main-2 .header-article-author,
+.aside-main-2 a {
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 
 .aside-main-1 a {
@@ -656,7 +661,7 @@ width: 100%;
   }
 
   .header-article {
-    height: 180px;
+    height: 160px;
   }
 
   .header-section {
@@ -780,7 +785,7 @@ width: 100%;
   }
 
   .header-article {
-    height: 365px;
+    height: 345px;
   }
 
   .header-article h1 {
