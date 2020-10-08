@@ -349,6 +349,7 @@ ul li a {
   margin-bottom: 25px;
 }
 
+
 .latest-news h1 {
   grid-column: span 4;
   font-size: 30px;
@@ -380,9 +381,9 @@ ul li a {
 }
 
 .latest-news figcaption h5 {
-  max-width: 100%;
-  font-size: 18px;
-  padding-bottom: 5px;
+max-width: 100%;
+font-size: 14px;
+padding-bottom: 5px;
 }
 
 .latest-deals span.discount {
@@ -456,9 +457,10 @@ ul li a {
 /* most-popular section */
 .most-popular {
   width: 95%;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 50px;
   flex-wrap: wrap;
+  /* gap: 10px; */
 }
 
 .relative {
@@ -467,13 +469,13 @@ ul li a {
 
 .absolute {
   position: absolute;
-  top: 230px;
+  top: 180px;
   left: 10px;
   color: white;
 }
 
 .text-on-img2 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .text-on-img2:hover {
@@ -481,24 +483,21 @@ ul li a {
   color: white;
 }
 
-.popular-img {
+.popular-img ,
+.popular-img-png {
   width: 100%;
-  height: 280px;
+  height: 230px;
 }
 
 .flex-1 {
-  max-width: 30%;
-  margin-right: 10px;
+  max-width: 31%;
+ 
 }
 
 .header-padding {
   padding: 10px 20px;
 }
 
-.popular-img-png {
-  width: 100%;
-  height: 280px;
-}
 
 .inline-flex {
   display: inline-flex;
@@ -509,6 +508,7 @@ ul li a {
 .inline-flex figcaption {
 padding-left: 10px;
 padding-top: 5px;
+width: 100%;
 }
 
 .color-light-red {
@@ -544,7 +544,7 @@ padding-top: 5px;
 }
 
 .most-popular figcaption {
-  max-width: 220px;
+  max-width: 240px;
 }
 
 .image-foot {
@@ -711,7 +711,7 @@ padding-top: 5px;
 
   .latest-news-img figcaption h5,
   .latest-deals-img figcaption h5 {
-    max-width: 100%;
+     max-width: 100%;
     padding-bottom: 10px;
   }
 
@@ -865,9 +865,9 @@ padding-top: 5px;
 
   .latest-news figcaption,
   .latest-deals-img figcaption {
-    max-width: 250px;
+    max-width: 260px;
   }
-
+ 
   .query-logo img {
     height: 82px;
   }
@@ -935,4 +935,6 @@ padding-top: 5px;
   .most-popular figcaption h5 {
     max-width: 100%;
   }
+
+
 }
