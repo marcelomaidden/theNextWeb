@@ -570,7 +570,7 @@ figcaption h5 {
   width: 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .most-popular {
     flex-direction: column;
   }
@@ -725,7 +725,7 @@ figcaption h5 {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1022px) {
   .nav1,
   .nav-2-left {
     display: flex;
@@ -848,7 +848,11 @@ figcaption h5 {
 
   .hidden-media-Q {
     display: none;
-  }
+  } 
+}
+@media (min-width:1024px) and (max-width:1025px) 
+{.hidden-media-Q {
+  display: none; 
 }
 
 @media (max-width: 1023px) {
