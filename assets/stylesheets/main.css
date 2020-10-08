@@ -889,6 +889,10 @@ width: 100%;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+
+  .header-article-author a {
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1025px) {
