@@ -9,7 +9,6 @@ body {
 }
 
 figure img {
-  width: 100%;
   height: 130px;
 }
 
@@ -404,7 +403,7 @@ ul li a {
 }
 
 .latest-news figcaption h5 {
-  max-width: 100%;
+  max-width: 88%;
   font-size: 100%;
   padding-bottom: 5px;
 }
@@ -444,7 +443,6 @@ ul li a {
 }
 
 .internet {
-  /* border-bottom: 1px solid grey; */
   border-bottom: 1px solid rgb(226, 180, 171);
 }
 
@@ -502,7 +500,7 @@ ul li a {
 
 .absolute {
   position: absolute;
-  top: 180px;
+  bottom: 10px;
   left: 10px;
   color: white;
 }
@@ -526,7 +524,6 @@ ul li a {
 .popular-img,
 .popular-img-png {
   width: 100%;
-  height: 230px;
 }
 
 .flex-1 {
@@ -539,7 +536,7 @@ ul li a {
 
 .inline-flex {
   display: inline-flex;
-  max-width: 370px;
+  max-width: 100%;
   gap: 50px;
 }
 
@@ -586,6 +583,9 @@ ul li a {
 }
 
 .image-foot {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/IG-Reels-Audio.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100px;
   height: 100px;
 }
