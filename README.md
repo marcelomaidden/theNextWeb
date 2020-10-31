@@ -21,7 +21,7 @@
 **Che Blanchard**
 
 - GitHub: [@che30](https://github.com/che30)
-- Twitter: [@BlanchardNsoh](https://twitter.com/BlanchardNsoh )
+- Twitter: [@che55085128](https://twitter.com/che55085128 )
 - LinkedIn: [Che Blanchard](https://www.linkedin.com/in/che-nsoh-9455271b0/)
 
 **Marcelo Araújo**
